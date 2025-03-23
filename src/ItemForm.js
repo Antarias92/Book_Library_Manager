@@ -39,25 +39,15 @@ function ItemForm({ initialData , onSubmit})
             />
           </div>
           <div>
-          <label className="form-label">Genre</label>
-            <input
-              type="type"
-              name="genre"
-              className="form-control"
-              value={formData.genre}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div class="dropdown">
-            <label className="form-label">Status</label>
-                <input
-                type="checkbox"
-                name="status"
+            <label className="form-label">Genre</label>
+              <input
+                type="type"
+                name="genre"
                 className="form-control"
-                value={formData.status}
+                value={formData.genre}
                 onChange={handleChange}
-                />
+                required
+              />
             </div>
           <button type="submit" className="btn btn-primary">Save</button>
         </form>

@@ -9,7 +9,7 @@ function Layout({children})
             <nav>
                 <Link className="btn btn-primary me-2" to="/"> Home </Link>
                 <Link className="btn btn-success me-2" to="/add"> Add Book </Link>
-                <Link className="btn btn-info" to="/filter">Filter</Link>
+               
             </nav>
             {children}
          </div>   

@@ -4,13 +4,14 @@ import Layout from './Layout';
 import AddBook from './AddBook';
 import ListItems from './ListItems';
 import EditBooks from './EditBooks';
+
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
   const [items , setItems] = useState([
-    {id : 1, title: "Frankenstein" , author: "Mary Shelley", genre: "Science Fiction", status: ""}
+    {id : 1, title: "Frankenstein" , author: "Mary Shelley", genre:"Science Fiction"}
   ])
 
   function deleteBook(id)
@@ -26,6 +27,7 @@ function App() {
   function updateBook(updated){
     setItems(items.map((item) => item.id === updated.id ? updated : item));
   }
+
 
   return (
     <Router>
